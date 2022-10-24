@@ -1,7 +1,13 @@
 package view
 
-import "fyne.io/fyne/v2"
+import (
+	"UniSma/resources"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/widget"
+)
 
+// Button Settings
 func (d *ButtonsLayout) MinSize(objects []fyne.CanvasObject) fyne.Size {
 	w, h := float32(0), float32(0)
 	for _, o := range objects {
